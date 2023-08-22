@@ -1,0 +1,91 @@
+{
+
+    "America_Norte_central":{
+        "Conacaf":{
+                        "USA":{
+                            "Pais":"United States of America",                                                  
+                            "Comida": ["USAComida1.jpg", "USAComida2.jpg","USAComida3.jpg","USAComida4.jpg", "USAComida5.jpg","USAComida6.jpg"],
+                            "Texto":["Hamburguesa","Pavo de acción de gracias","Barbecue","Pie de Manzana","Macarrones con queso","Hot Dog"],
+                            "Povincias":{
+                                "Nombre":["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia",
+                                          "Hawái","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Luisiana","Maine","Maryland","Massachusetts",
+                                          "Míchigan","Minnesota","Misisipi","Misuri","Montana","Nebraska","Nevada","Nuevo Hampshire",
+                                          "Nueva Jersey","Nuevo México","Nueva York","Carolina del Norte","Dakota del Norte","Ohio","Oklahoma","Oregón",
+                                          " Pensilvania","Rhode Island","Carolina del Sur","Dakota del Sur","Tennessee","Texas","Utah","Vermont","Virginia","Washington","Virginia Occidental","Wisconsin","Wyoming"],
+                                "Num_Ciudades":3,
+                                "Ciudades":{
+                                    "Nombre":["Montgomery ", "Birmingham", "Mobile", "Anchorage", "Fairbanks", "Juneau", "Phoenix ", "Tucson", "Mesa", 
+                                              "Little Rock", "Fort Smith", "Fayetteville", "Sacramento", "Los Ángeles", "San Francisco", "Denver", "Colorado Springs", 
+                                              "Aurora", "Hartford", "Bridgeport", "New Haven", "Dover", "Wilmington", "Newark", "Tallahassee", "Miami", "Orlando", 
+                                              "Atlanta", "Savannah", "Augusta", "Boise", "Nampa", "Idaho Falls", "Springfield", "Chicago", "Aurora", "Indianapolis", 
+                                              "Fort Wayne", "Evansville", "Des Moines", "Cedar Rapids", "Davenport", "Topeka", "Wichita", "Kansas City", "Frankfort", 
+                                              "Louisville", "Lexington", "Baton Rouge", "Nueva Orleans", "Shreveport", "Augusta", "Portland", "Bangor", "Annapolis", 
+                                              "Baltimore", "Frederick", "Boston", "Worcester", "Springfield", "Lansing", "Detroit", "Grand Rapids", "Saint Paul", 
+                                              "Minneapolis", "Rochester", "Jackson", "Biloxi", "Gulfport", "Jefferson City (capital)", "San Luis", "Kansas City", 
+                                              "Helena", "Billings", "Missoula", "Lincoln", "Omaha", "Bellevue", "Carson City ", "Las Vegas", "Reno", "Concord", 
+                                              "Mánchester", "Nashua", "Trenton", "Newark", "Jersey City", "Santa Fe", "Albuquerque", "Las Cruces", "Albany ", 
+                                              "Nueva York", "Búfalo", "Raleigh", "Charlotte", "Greensboro", "Bismarck", "Fargo", "Grand Forks", "Columbus", "Cleveland", 
+                                              "Cincinnati", "Oklahoma City", "Tulsa", "Norman", "Salem", "Portland", "Eugene", "Harrisburg", "Filadelfia", "Pittsburgh", 
+                                              "Providence", "Warwick", "Cranston", "Columbia", "Charleston", "Greenville", "Pierre", "Sioux Falls", "Rapid City", 
+                                              "Nashville", "Memphis", "Knoxville", "Austin", "Houston", "Dallas", "Salt Lake City", "West Valley City", "Provo", 
+                                              "Montpelier", "Burlington", "Rutland", "Richmond", "Virginia Beach", "Norfolk", "Olympia", "Seattle", "Spokane", "Charleston", 
+                                              "Huntington", "Morgantown", "Madison", "Milwaukee", "Green Bay","Cheyenne", "Casper", "Laramie"],
+                                    "Codigo_postal":["36101", "36102", "36103", "35201", "35202", "35203", "36601", "36602", "36603", "99501", "99502", "99503", "99701", "99702", "99703", "99801", "99802", "99803", "85001", "85002", "85003", "85701", "85702", "85703", "85201", "85202", "85203", "72201", "72202", "72203", "72901", "72902", "72903", "72701", "72702", "72703", "95811", "95812", "95813", "90001", "90002", "90003", "94102", "94103", "94104", "80201", "80202", "80203", "80901", "80902", "80903", "80010", "80011", "80012", "06101", "06102", "06103", "06601", "06602", "06603", "06501", "06502", "06503", "19901", "19902", "19903", "19801", "19802", "19803", "19711", "19712", "19713", "32301", "32302", "32303", "33101", "33102", "33103", "32801", "32802", "32803", "30301", "30302", "30303", "31401", "31402", "31403", "30901", "30902", "30903", "83701", "83702", "83703", "83651", "19711", "19712", "19713", "32301", "32302", "32303", "33101", "33102", "33103", "32801", "32802", "32803", "30301", "30302", "30303", "31401", "31402", "31403", "30901", "30902", "30903", "83701", "83702", "83703", "83651", "19711", "19712", "19713", "32301", "32302", "32303", "33101", "33102", "33103", "32801", "32802", "32803", "30301", "30302", "30303", "31401", "31402", "31403", "30901", "30902", "30903", "83701", "83702", "83652", "83653", "83401", "83402", "83403"]
+                                }
+                             },
+                            "Bandera": "USA.jpg",
+                            "Moneda":["Dolar", "Dolar.png"],
+                            "Numero_Paises":"3"
+                        },
+                        "Canada":{
+                            "Pais":"Canada",
+                            "Comida": ["CanadaComida1.jpg", "CanadaComida2.jpg","CanadaComida3.jpg","CanadaComida4.jpg", "CanadaComida5.jpg","CanadaComida6.jpg"],
+                            "Texto":["Bannock","Salmon Jerky","Beavertail","Poutine","Jarabe de Mapple","Tourtière"],
+                            "Povincias":{
+                                "Nombre":[" Columbia Británica","Alberta","Saskatchewan","Manitoba","Ontario","Quebec","Nuevo Brunswick","Isla del Príncipe Eduardo","Nueva Escocia","Terranova y Labrador"],
+                                "Num_Ciudades":3,
+                                "Ciudades":{
+                                    "Nombre":["Vancouver", "Victoria", "Surrey", "Calgary", "Edmonton", "Red Deer", "Saskatoon", "Regina", "Prince Albert",
+                                              "Winnipeg", "Brandon", "Thompson", "Toronto", "Ottawa", "Mississauga", "Montreal", "Quebec City", "Laval", "Fredericton", "Saint John", "Moncton",
+                                              "Charlottetown", "Summerside", "Stratford", "Halifax", "Sydney", "Dartmouth", "St. John's", "Mount Pearl", "Corner Brook"],
+                                    "Codigo_postal":["V6A 1A1","V5K 0A1","V6Z 1A1","V8N 1A1", "V8P 1A1", "V9A 1A1", "V3R 0A1", "V3S 0A1", "V4N 1A1", "T2A 0A1", "T2E 0A1", "T2N 1A1", "T5A 0A1", "T6E 0A1", "T6R 1A1", "T4N 0A1", "T4P 0A1", "T4R 1A1", "S7H 0A1",
+                                                     "S7K 0A1", "S7N 1A1", "S4N 0A1", "S4R 0A1", "S4T 1A1", "S6V 0A1", "S6W 0A1", "S6X 1A1", "R2C 0A1", "R2H 0A1", "R3T 1A1"]
+                                }
+                             },
+                            "Bandera": "Canada.jpg",
+                            "Moneda":["DOLAR-CANADIENSE","DolarCanadience.jpg"],
+                            "Numero_Paises":"3"
+                        },
+                        "Mexico":{
+                            "Pais":"México",
+                            "Comida": ["MexicoComida1.jpg", "MexicoComida2.jpg","MexicoComida3.jpg","MexicoComida4.jpg", "MexicoComida5.jpg","MexicoComida6.jpg"],
+                            "Texto":["Tacos","Quesadillas","Flautas","Pozole","Enchiladas","Chapulines"],
+                            "Povincias":{
+                                "Nombre":["Ciudad de México","Jalisco","Nuevo León","Puebla","Estado de México","Guanajuato","Chihuahua","Baja California","Yucatán","Sonora","Coahuila","Baja California","Sinaloa","Aguascalientes","Chihuahua","Michoacán","San Luis Potosí","Chiapas",
+                                          "Tamaulipas","Tabasco","Oaxaca","Campeche","Querétaro","Durango","Zacatecas","Tepic","Aguascalientes","Aguascalientes","Veracruz","Morelos"],
+                                "Num_Ciudades":3,
+                                "Ciudades":{
+                                    "Nombre":["Ecatepec de Morelos", "Iztapalapa", "Tlalnepantla de Baz","Zapopan", "Tlaquepaque", "Tonala","San Nicolás de los Garza", "Guadalupe", "Escobedo","Heroica Puebla de Zaragoza", "Tehuacán", "Cholula","Ecatepec de Morelos", "Naucalpan de Juárez", "Metepec","Irapuato", "Celaya", "Salamanca","Chihuahua", "Delicias", "Parral",
+                                              "Mexicali", "Ensenada", "Rosarito","Valladolid", "Progreso", "Tizimín","Nogales", "Ciudad Obregón", "Guaymas","Torreón", "Monclova", "Piedras Negras","Tijuana", "Ensenada", "Tecate","Mazatlán", "Los Mochis", "Guasave","Jesús María", "Rincón de Romos", "San Francisco de los Romo","Ciudad Cuauhtémoc", "Hidalgo del Parral", "Nuevo Casas Grandes",
+                                              "Uruapan", "Zamora", "La Piedad","Soledad de Graciano Sánchez", "Matehuala", "Rioverde","Tapachula", "San Cristóbal de las Casas", "Comitán de Domínguez","Ciudad Victoria", "Nuevo Laredo", "Matamoros","Comalcalco", "Cárdenas", "Huimanguillo","Salina Cruz", "Juchitán de Zaragoza", "Huatulco","Ciudad del Carmen", "Escárcega", "Champotón",
+                                              "San Juan del Río", "El Marqués", "Corregidora","Gómez Palacio", "Lerdo", "Santiago Papasquiaro","Fresnillo", "Guadalupe", "Jerez de García Salinas","Tepic", "Bahía de Banderas", "Santiago Ixcuintla","Manzanillo", "Villa de Álvarez", "Tecoman","Veracruz", "Coatzacoalcos", "Orizaba","Jiutepec", "Temixco", "Yautepec", "Los Cabos", "Comondú", "Loreto"],
+                                    "Codigo_postal":["55000", "09000", "54000", "45000", "45500", "45400", "66400", "67100", "66050", "72000", "75700", "72760", 
+                                                     "53000", "52140", "36500", "38000", "36700", "31000", "33000", "33800", "21000", "22800", "22710", "97780", 
+                                                     "97320", "97700", "84000", "85000", "85400", "27000", "25700", "26000", "22000", "21500", "82000", "81200", 
+                                                     "81000", "20900", "20400", "20300", "31500", "33800", "31700", "60120", "59600", "59300", "78430", "78700", 
+                                                     "79610", "30700", "29200", "30000", "87000", "88000", "87300", "86300", "86500", "86400", "70600", "70000", 
+                                                     "70989", "24100", "24300", "24400", "76800", "76240", "76900", "35000", "35150", "34900", "99000", "98600", 
+                                                     "99300", "63000", "63735","63100", "63101", "63102", "63103", "63104","63400", "63401","28200", "28201","28100", 
+                                                     "28101","91700", "91701","96400", "96401"]
+                                }
+                             },
+                            "Bandera": "Mexico.jpg",
+                            "Moneda": ["PESO - MEXICANO","PesoMexicano.jpg"],
+                            "Numero_Paises":"3"
+                        }
+                        
+        }  
+    },
+    "Maximo paises": "3"
+
+}

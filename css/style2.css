@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    background-color: #000;
+}
+
+
+.contenedor_header {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+nav {
+    background-color: #121116;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pensana {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #0a0804;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h3 {
+    margin: 0;
+    color: #9b1a61;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h4 {
+    margin: 0;
+    color: #9b1a61;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: #121116;;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 30px;
+}
+.logo{
+    height: 100%;
+}
+
+img{
+    width: 100%;
+    height: 50%;
+}
+
+.Recomendaciones{
+    padding-top: 2% ;
+
+}
+
+
+/* Estilos para el botón flotante */
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Estilos para el cuadro emergente */
+.chatbox-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 300px;
+    height: 30%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+
+/* Mostrar el cuadro emergente al hacer clic en el botón */
+.show-chatbox {
+    display: block;
+}

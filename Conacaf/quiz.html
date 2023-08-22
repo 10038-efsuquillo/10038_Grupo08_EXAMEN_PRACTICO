@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+      background-color: black;
+      color: white;
+    }
+    #quizForm {
+      background-color: transparent;
+    }
+    h2, input, button {
+      color: white;
+    }
+    .form-group {
+      display: none;
+      animation: fadeIn 1s ease forwards; /* Animación de aparición */
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+<title>Quiz</title>
+</head>
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+      <form id="quizForm">
+  
+
+        <div class="prueba1 form-group form-check ">
+        <h2>Pregunta 1: ¿Cuál de estos es una ciudad de USA?</h2>
+        <input type="radio" name="q1" value="a"> a) San Francisco<br>
+        <input type="radio" name="q1" value="b"> b) Madrid<br>
+        <input type="radio" name="q1" value="c"> c) Ottawa <br>
+        </div>
+        <div class="prueba2 form-group form-check">
+        <h2>Pregunta 2: ¿Cuál de estos es una comida de Canda?</h2>
+        <input type="radio" name="q2" value="a"> a) Posole<br>
+        <input type="radio" name="q2" value="b"> b) Hot Dog<br>
+        <input type="radio" name="q2" value="c"> c) Maple Syrup<br>
+        </div>
+        <div class="prueba3 form-group form-check">
+            <h2>Pregunta 3: ¿Cual es la moneda de Mexico?</h2>
+            <input type="radio" name="q3" value="a"> a) Real<br>
+            <input type="radio" name="q3" value="b"> b) Peso<br>
+            <input type="radio" name="q3" value="c"> c) Euro<br>
+        </div>
+        <div class="prueba4 form-group form-check">
+            <h2>Pregunta 4: ¿Cuantas provincias(estados) tiene USA?</h2>
+            <input type="radio" name="q4" value="a"> a) 50<br>
+            <input type="radio" name="q4" value="b"> b) 23<br>
+            <input type="radio" name="q4" value="c"> c) 51<br>
+        </div>
+        <div class="prueba5 form-group form-check">
+            <h2>Pregunta 5: ¿Cual es la moneda de Canada?</h2>
+            <input type="radio" name="q5" value="a"> a) Dolar<br>
+            <input type="radio" name="q5" value="b"> b) $<br>
+            <input type="radio" name="q5" value="c"> c) C$<br>
+        </div>
+        <div class="prueba6 form-group form-check">
+            <h2>Pregunta 6: ¿A que continente pertenecen USA y Canada?</h2>
+            <input type="radio" name="q6" value="a"> a) America Central<br>
+            <input type="radio" name="q6" value="b"> b) America del Norte<br>
+            <input type="radio" name="q6" value="c"> c) America del Sur<br>
+        </div>
+        <div class="prueba7 form-group form-check">
+            <h2>Pregunta 7: ¿A que continente pertenece Mexico?</h2>
+            <input type="radio" name="q7" value="a"> a) America del Norte<br>
+            <input type="radio" name="q7" value="b"> b) America Central<br>
+            <input type="radio" name="q7" value="c"> c) America del Sur<br>
+        </div>
+        <div class="prueba8 form-group form-check">
+            <h2>Pregunta 8: ¿Cual de estos es una Provinica(estado) de Mexico?</h2>
+            <input type="radio" name="q8" value="a"> a) Baja California<br>
+            <input type="radio" name="q8" value="b"> b) Texas<br>
+            <input type="radio" name="q8" value="c"> c) Guadalajara <br>
+        </div>
+        <div class="prueba9 form-group form-check">
+            <h2>Pregunta 9: ¿Cual de estos es una comida de USA?</h2>
+            <input type="radio" name="q9" value="a"> a) Atlantic Lobster<br>
+            <input type="radio" name="q9" value="b"> b) Posole<br>
+            <input type="radio" name="q9" value="c"> c)Hamburguesa<br>
+        </div>
+        <div class="prueba10 form-group form-check">
+            <h2>Pregunta 10: ¿De que confederacion son parte los paises de USA, Canada y Mexico?</h2>
+            <input type="radio" name="q10" value="a"> a) Fifa<br>
+            <input type="radio" name="q10" value="b"> b) Conacaf<br>
+            <input type="radio" name="q10" value="c"> c) Comebol<br>
+        </div>
+
+
+        <div class="EnviarResul">
+            <button type="button" class="btn btn-primary mt-3" id="botonEnviar" style="display: none;" onclick="calcularResultado()">Enviar respuestas</button>
+          </div>
+        </form>
+    
+<div class="Resultado"><br><br>
+    <p id="resultado"></p>
+    <div id="botonesResultado" style="display: none;">
+      <button type="button" class="btn btn-primary mt-3" id="repetirFormulario" onclick="repetirFormulario()">Repetir formulario</button>
+      <a href="../index.html" class="btn btn-primary mt-3" id="irAPaginaPrincipal">Ir a página principal</a>
+
+    
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(".form-group").hide(); // Oculta todas las preguntas excepto la primera
+  $(".form-group:first").show(); // Muestra la primera pregunta
+
+  $(".form-check input").change(function() {
+    var preguntaActual = $(this).closest(".form-group");
+    var siguientePregunta = preguntaActual.next(".form-group");
+
+    preguntaActual.hide(); // Oculta la pregunta actual
+
+    if (siguientePregunta.length > 0) {
+      siguientePregunta.show(); // Muestra la siguiente pregunta
+    } else {
+      $("#botonEnviar").show(); // Muestra el botón de enviar al final
+    }
+  });
+});
+
+
+function calcularResultado() {
+  const respuestasCorrectas = {
+    "q1": "a",
+    "q2": "c",
+    "q3": "b",
+    "q4": "a",
+    "q5": "c",
+    "q6": "b",
+    "q7": "b",
+    "q8": "a",
+    "q9": "c",
+    "q10": "b"
+  };
+
+  const form = document.getElementById("quizForm");
+  const resultados = document.getElementById("resultado");
+    const botonesResultado = document.getElementById("botonesResultado");
+
+  const respuestas = form.elements;
+  let puntaje = 0;
+
+  for (let i = 0; i < respuestas.length; i++) {
+    if (respuestas[i].type === "radio" && respuestas[i].checked) {
+      const pregunta = respuestas[i].name;
+      if (respuestas[i].value === respuestasCorrectas[pregunta]) {
+        puntaje++;
+      }
+    }
+  }
+
+  if (puntaje < 5) {
+    resultados.textContent = `Obtuviste ${puntaje} de ${Object.keys(respuestasCorrectas).length} preguntas correctas. ¡Vamos, inténtalo de nuevo!`;
+  } else if (puntaje >= 5 && puntaje <= 7) {
+    resultados.textContent = `Obtuviste ${puntaje} de ${Object.keys(respuestasCorrectas).length} preguntas correctas. ¡Más suerte para la próxima!`;
+  } else {
+    resultados.textContent = `Obtuviste ${puntaje} de ${Object.keys(respuestasCorrectas).length} preguntas correctas. ¡Buen trabajo!`;
+  }
+  botonesResultado.style.display = "block";
+}
+
+function repetirFormulario() {
+    location.reload(); // Recarga la página actual
+  }
+
+</script>
+</body>
+</html>
